@@ -27,7 +27,7 @@ x_train = x_norm.values
 y_train = y_input.values.ravel()
 
 # Create SVM object
-svm = SVR(C=1.0, epsilon=0.2)
+svm = SVR(C=100, epsilon=0.2)
 
 # Train the model using the training sets
 svm.fit(x_train, y_train)
